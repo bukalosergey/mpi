@@ -1,0 +1,44 @@
+{
+    "compilerOptions": {
+        "composite": true,
+        "module": "commonjs", 
+        "moduleResolution": "node",
+        "noImplicitAny": false,
+        "removeComments": true,
+        "noLib": false,
+        "allowSyntheticDefaultImports": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "target": "es6",
+        "sourceMap": true,
+        "outDir": "./dist",
+        "declaration": true,
+        "lib": [
+            "es7"
+        ],
+        "baseUrl": "./packages",
+        "paths": {
+            "@3ds/common": ["./common/src"],
+            "@3ds/server": ["./server/src"],
+            "@3ds/dal": ["./dal/src"],
+            "@3ds/bll": ["./bll/src"],
+            "@3ds/web-rest": ["./web-rest/src"],
+            "utils": ["./utils/src"]
+        }
+    },
+    "references": [
+        { "path": "./packages/common" },
+        { "path": "./packages/dal" },
+        { "path": "./packages/bll" },
+        { "path": "./packages/server" },
+        { "path": "./packages/utils" },
+    ],
+    "compileOnSave": true,
+    "exclude": [
+        "node_modules",
+        "**/node_modules/**/*",
+        "**/*.spec.ts",
+        "*/*/lib/**/*",
+        "**/*.d.ts"
+    ]
+}

@@ -1,0 +1,55 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+
+    input {
+        display: block;
+        margin: 0 10px 5px 10px;
+    }
+
+    input[type="submit"] {
+        margin-left: 150px;
+    }
+
+    </style>
+</head>
+
+<body>
+    <!-- 1qwezxc -->
+    <form action="http://localhost:3000/api/initial3ds" method="POST">
+        acquirerBIN:
+        <input type="text" name="acquirerBIN" value="2201380119" /> 
+        acquirerMerchantID:
+        <input type="text" name="acquirerMerchantID" value="d8_mrc_1" />
+        purchaseCurrency:
+        <input type="text" name="purchaseCurrency" value="643" />
+        extTxtId:
+        <input type="text" name="extTxtId" value="78987964646" />
+        threeDSRequestorAuthenticationInd:
+        <input type="text" name="threeDSRequestorAuthenticationInd" value="01" />
+        purchaseAmount:
+        <input type="text" name="purchaseAmount" value="160000" />
+       
+        messageCategory:
+        <input type="text" name="messageCategory" value="01" />
+        purchaseDate:
+        <input type="text" name="purchaseDate" value="20170316141312" />
+        cardholderName:
+        <input type="text" name="cardholderName" value="Ivanov" />
+        acctNumber:
+        <input type="text" name="acctNumber" value="2201382000000047" />
+        cardExpiryDate:
+        <input type="text" name="cardExpiryDate" value="2012" />
+	reqMode:
+	<input type="text" name="reqMode" value="1" />  
+        <input type="submit" value="send" />
+    </form>
+
+</body>
+
+</html>

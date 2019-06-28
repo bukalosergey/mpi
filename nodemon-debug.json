@@ -1,0 +1,6 @@
+{
+    "watch": ["./packages/*/src/**/*"],
+    "ext": "ts",
+    "ignore": ["./packages/*/src/**/*.spec.ts"],
+    "exec": "node --inspect-brk -r ts-node/register -r tsconfig-paths/register packages/server/src/main.ts"
+}

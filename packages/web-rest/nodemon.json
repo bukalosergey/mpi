@@ -1,0 +1,10 @@
+{
+    "signal": "SIGHUP",
+    "watch": [
+        "packages/web-rest/src/**/*"
+    ],
+    "ext": "ts",
+    "ignore": ["packages/*/src/**/*.spec.ts"],
+    "exec": "ts-node -r tsconfig-paths/register packages/web-rest/src/index.ts"
+  }
+  

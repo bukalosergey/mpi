@@ -1,0 +1,54 @@
+{
+	"name": "@3ds/server",
+	"version": "0.0.0",
+	"description": "> TODO: description",
+	"author": "sergey bukalo <sergej.bukalo@d8crop.com>",
+	"license": "ISC",
+	"main": "lib/main",
+	"directories": {
+		"lib": "lib",
+		"test": "__tests__"
+	},
+	"files": [
+		"lib"
+	],
+	"repository": {
+		"type": "git",
+		"url": "git@gitlab.d8corporation.com:3DS/g2b-3ds-nest.git"
+	},
+	"scripts": {
+		"start": "ts-node -r tsconfig-paths/register src/main.ts",
+		"tsc": "tsc"
+	},
+	"dependencies": {
+		"@3ds/bll": "^0.0.0",
+		"@3ds/common": "^0.0.0",
+		"koa": "^2.6.2",
+		"koa-body": "^4.0.6",
+		"koa-bodyparser": "^4.2.1",
+		"koa-ejs": "^4.1.2",
+		"koa-router": "^7.4.0",
+		"koa-static": "^5.0.0",
+		"reflect-metadata": "^0.1.12",
+		"utils": "^0.0.0"
+	},
+	"devDependencies": {
+		"@types/koa": "^2.0.47",
+		"@types/koa-router": "^7.0.35",
+		"@types/node": "^10.7.1"
+	},
+	"jest": {
+		"moduleFileExtensions": [
+			"js",
+			"json",
+			"ts"
+		],
+		"rootDir": "src",
+		"testRegex": ".spec.ts$",
+		"transform": {
+			"^.+\\.(t|j)s$": "ts-jest"
+		},
+		"coverageDirectory": "../coverage",
+		"testEnvironment": "node"
+	}
+}

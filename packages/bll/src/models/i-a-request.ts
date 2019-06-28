@@ -1,0 +1,50 @@
+
+export interface IARequest {
+
+    threeDSRequestorID: string;
+    threeDSRequestorName: string;
+    threeDSRequestorURL: string;
+    threeDSServerRefNumber: string;
+    threeDSServerTransID: string;
+    threeDSServerURL: string;
+    threeDSCompInd: string;
+    threeDSRequestorAuthenticationInd: string;
+    acquirerBIN: string;
+    acquirerMerchantID: string;
+    addrMatch: string;
+    browserAcceptHeader: string;
+    browserIP: string;
+    browserJavaEnabled: boolean;
+    browserLanguage: string;
+    browserColorDepth: string;
+    browserScreenHeight: string;
+    browserScreenWidth: string;
+    browserTZ: string;
+    browserUserAgent: string | string[];
+    cardExpiryDate: string;
+    acctNumber: string;
+    billAddrCity: string;
+    billAddrCountry: string;
+    billAddrLine1: string;
+    billAddrPostCode: string;
+    billAddrState: string;
+    email: string;
+    homePhone: { cc: string, subscriber: string };
+    cardholderName: string;
+    shipAddrCity: string;
+    shipAddrCountry: string;
+    shipAddrLine1: string;
+    shipAddrState: string;
+    deviceChannel: string;
+    mcc: string;
+    merchantCountryCode: string;
+    merchantName: string;
+    messageCategory: string;
+    messageType: string;
+    messageVersion: string;
+    purchaseAmount: string;
+    purchaseCurrency: string;
+    purchaseExponent: string;
+    purchaseDate: string;
+    transType: string;
+}

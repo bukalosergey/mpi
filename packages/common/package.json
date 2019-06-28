@@ -1,0 +1,32 @@
+{
+    "name": "@3ds/common",
+    "version": "0.0.0",
+    "description": "> TODO: description",
+    "author": "sergej.bukalo <sergej.bukalo@d8corp.com>",
+    "license": "ISC",
+    "main": "src/index",
+    "types": "src",
+    "directories": {
+        "lib": "lib",
+        "test": "__tests__"
+    },
+    "files": [
+        "lib"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git@gitlab.d8corporation.com:3DS/g2b-3ds-nest.git"
+    },
+    "scripts": {},
+    "dependencies": {
+        "knex": "^0.16.3",
+        "oracledb": "^3.0.1",
+        "pg": "^7.7.1",
+        "pino": "^5.10.5",
+        "redis": "^2.8.0"
+    },
+    "devDependencies": {
+        "@types/knex": "^0.15.1",
+        "@types/redis": "^2.8.10"
+    }
+}
